@@ -1,4 +1,4 @@
-echo " Enter the basic :"
+
 basic=$1
 dp=$(($basic * 50/100))
 comm=$(($dp+$basic))
