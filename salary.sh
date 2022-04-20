@@ -1,5 +1,5 @@
 echo " Enter the basic :"
-basic=$1
+read basic
 dp=$(($basic * 50/100))
 comm=$(($dp+$basic))
 da=$(($comm * 35/100))
