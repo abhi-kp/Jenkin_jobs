@@ -18,4 +18,5 @@ echo "Mul is =" $sum;;
 4)sum=$(echo "$n1 / $n2" | bc -l)
 echo "div is =" $sum;;
 *)echo "invalid choice"
+
 esac
