@@ -1,5 +1,4 @@
-echo "Enter N"
-read N
+N=$1
 i=1
 sum=0
 echo "Enter nums"
