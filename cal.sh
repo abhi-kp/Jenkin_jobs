@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sum=0
-i="y"
+
 
 n1=$1
 
