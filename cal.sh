@@ -3,20 +3,19 @@
 sum=0
 
 
-n1=$1
+a=$1
 
 
-n2=$2
+b=$2
 ch=$3
 case $ch in
-1)sum=$(echo " $n1 + $n2" | bc -l)
-echo "Addition is =" $sum;;
-2)sum=$(echo "$n1 - $n2" | bc -l)
-echo "Sub is =" $sum;;
-3)sum=$(echo "$n1 * $n2" | bc -l)
-echo "Mul is =" $sum;;
-4)sum=$(echo "$n1 / $n2" | bc -l)
-echo "div is =" $sum;;
-*)echo "invalid choice"
-
+  1)res=`echo $a + $b | bc`
+  ;;
+  2)res=`echo $a - $b | bc`
+  ;;
+  3)res=`echo $a \* $b | bc`
+  ;;
+  4)res=`echo "scale=2; $a / $b" | bc`
+  ;;
 esac
+echo "Result : $res"
