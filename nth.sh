@@ -1,5 +1,5 @@
 echo "Enter the value of N"
-read N
+N=$1
 i=1;
 sum=0;
 while [ $i -le $N ]
