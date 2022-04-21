@@ -7,15 +7,11 @@ a=$1
 
 
 b=$2
-ch=$3
-case $ch in
-  1)res=`echo $a + $b | bc`
-  ;;
-  2)res=`echo $a - $b | bc`
-  ;;
-  3)res=`echo $a \* $b | bc`
-  ;;
-  4)res=`echo "scale=2; $a / $b" | bc`
-  ;;
+c=$3
+case $c in
+  1)echo "sum $((a + b))"  ;;
+  2)echo "subtraction $((a - b ))"  ;;
+  3)echo "multiplication $((a * b))" ;;
+  4)echo  "division $((a / b))"  ;;
+  *) echo "enter valid operation"
 esac
-echo "Result : $res"
