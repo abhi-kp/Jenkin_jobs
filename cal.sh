@@ -2,7 +2,7 @@
 a=$1
 b=$2
 c=$3
-case $c in
+cas $c in
   1)echo "sum $((a + b))"  ;;
   2)echo "subtraction $((a - b ))"  ;;
   3)echo "multiplication $((a * b))" ;;
